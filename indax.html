@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <title>今日のフーリエ変換</title>
+  <meta content="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <div class="header">
+      <p class="header-left">Math</p>
+      <a href="#" class="header-next">next>></a>
+      <div class="clear"></div>
+  </div>
+  <div class="main">
+    <div class="top-wrapper">
+      <div class="top-title">
+          <h1>LEARN TO CALCULATION</h1>
+          <h1>FOURIER TRANSFORM</h1>
+      </div>
+    </div>
+    <div class="kinds-wrapper">
+      <div class="memo">
+        <h1>フーリエ変換のメモ</h1>
+        <img src="img/hurie.png" width="800px" height="600px" alt="フーリエ変換の公式">
+      </div>
+      <div class="container">
+        <h2>-----フーリエ変換の種類---------------</h2>
+        <ul>
+          <li>フーリエ変換</li>
+          <li>離散フーリエ変換</li>
+          <li>高速離散フーリエ変換</li>
+          <li>逆フーリエ変換など...</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mean-wrapper">
+      <div class="container">
+        <h2>-----公式の意味------------------</h2>
+        <img src="img/image-hurie.jpg" alt="">
+        <p>フーリエ変換の公式がなにを表しているかは公式を見る限り、
+          <span>時間の関数になんかかけて積分すると、角周波数が得られる</span>
+          ということがわかる</p>
+        <p>もうすこし詳しく言うと、</p>
+        <p  class="mean-about"><span>F(t)にexp(-jωt)をかけ、-∞～∞の範囲で時間積分をする</span></p>
+        <p class="down-arrow">⇩</p>
+        <p  class="mean-about"><span>その結果、角周波数の関数F(ω)が得られる</span></p>
+      </div>
+      <div class="procedure-wrapper">
+        <div class="container">
+          <h2>-----フーリエ変換の流れ----------------</h2>
+          <div class="procedures">
+            <div class="proce">
+              <img src="img/image-hurie1.png">
+              <p>複雑な波形が与えられる</p>
+            </div>
+            <p class="down-arrow">⇩</p>
+            <div class="center">
+              <img class="sin" src="img/sin2x.png">
+              <img class="sin" src="img/2sinx.png">
+              <img class="sin" src="img/sin3x.png">
+              <p>単純なsin関数に分ける</p>
+              <div class="clear"></div>
+            </div>
+            <p class="down-arrow">⇩</p>
+            <div class="proce-back">
+              <img src="img/image-hurie2.png">
+              <p class="result-hurie">それぞれのsin波の振幅を角周波数ごとにまとめる</p>
+              <p class="careful">縦軸:大きさ(sinの隣の数) 横軸:角周波数(xの隣の数)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="footer">
+
+  </div>
+</body>
